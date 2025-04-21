@@ -1,5 +1,5 @@
 // Load data orders
-fetch("http://127.0.0.1:5050/orders")
+fetch("https://caaabfb4-f4ed-4cc0-9e17-30c26e33be7f-00-2q5idvq68h83h.pike.replit.dev/payment")
   .then(res => res.json())
   .then(data => {
     const tbody = document.querySelector("#orderTable tbody");
@@ -17,7 +17,7 @@ fetch("http://127.0.0.1:5050/orders")
   });
 
 // Load data user & tombol aksi
-fetch("http://127.0.0.1:5050/users")
+fetch("https://caaabfb4-f4ed-4cc0-9e17-30c26e33be7f-00-2q5idvq68h83h.pike.replit.dev/payment")
   .then(res => res.json())
   .then(data => {
     const tbody = document.querySelector("#userTable tbody");
@@ -41,9 +41,9 @@ fetch("http://127.0.0.1:5050/users")
   });
 
 function updateStatus(userId, status) {
-  fetch(`http://127.0.0.1:5050/update-status/${userId}`, {
+ fetch("https://caaabfb4-f4ed-4cc0-9e17-30c26e33be7f-00-2q5idvq68h83h.pike.replit.dev/payment", {${userId}`, {
     method: "PUT",
-    headers: {
+    headers: { 
       "Content-Type": "application/json"
     },
     body: JSON.stringify({ status })
