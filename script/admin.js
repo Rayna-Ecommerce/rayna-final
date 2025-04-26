@@ -1,5 +1,5 @@
 // Load data orders
-fetch("https://caaabfb4-f4ed-4cc0-9e17-30c26e33be7f-00-2q5idvq68h83h.pike.replit.dev/payment")
+fetch("https://caaabfb4-f4ed-4cc0-9e17-30c26e33be7f-00-2q5idvq68h83h.pike.replit.dev:3000/")
   .then(res => res.json())
   .then(data => {
     const tbody = document.querySelector("#orderTable tbody");
@@ -17,7 +17,7 @@ fetch("https://caaabfb4-f4ed-4cc0-9e17-30c26e33be7f-00-2q5idvq68h83h.pike.replit
   });
 
 // Load data user & tombol aksi
-fetch("https://caaabfb4-f4ed-4cc0-9e17-30c26e33be7f-00-2q5idvq68h83h.pike.replit.dev/payment")
+fetch("https://caaabfb4-f4ed-4cc0-9e17-30c26e33be7f-00-2q5idvq68h83h.pike.replit.dev:3000/")
   .then(res => res.json())
   .then(data => {
     const tbody = document.querySelector("#userTable tbody");
@@ -41,7 +41,7 @@ fetch("https://caaabfb4-f4ed-4cc0-9e17-30c26e33be7f-00-2q5idvq68h83h.pike.replit
   });
 
 function updateStatus(userId, status) {
- fetch("https://caaabfb4-f4ed-4cc0-9e17-30c26e33be7f-00-2q5idvq68h83h.pike.replit.dev/payment", {${userId}`, {
+ fetch("https://caaabfb4-f4ed-4cc0-9e17-30c26e33be7f-00-2q5idvq68h83h.pike.replit.dev:3000/", {${userId}`, {
     method: "PUT",
     headers: { 
       "Content-Type": "application/json"
