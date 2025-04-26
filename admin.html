@@ -63,7 +63,7 @@
 
   <script>
     // Load data orders
-    fetch("https://caaabfb4-f4ed-4cc0-9e17-30c26e33be7f-00-2q5idvq68h83h.pike.replit.dev:3000/")
+    fetch("https://caaabfb4-f4ed-4cc0-9e17-30c26e33be7f-00-2q5idvq68h83h.pike.replit.dev:3000/cart")
       .then(res => res.json())
       .then(data => {
         const tbody = document.querySelector("#orderTable tbody");
@@ -81,7 +81,7 @@
       });
 
     // Load data user
-    fetch("https://caaabfb4-f4ed-4cc0-9e17-30c26e33be7f-00-2q5idvq68h83h.pike.replit.dev:3000/")
+    fetch("https://caaabfb4-f4ed-4cc0-9e17-30c26e33be7f-00-2q5idvq68h83h.pike.replit.dev:3000/cart")
       .then(res => res.json())
       .then(data => {
         const tbody = document.querySelector("#userTable tbody");
